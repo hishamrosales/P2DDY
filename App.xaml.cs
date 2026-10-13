@@ -1,4 +1,6 @@
-﻿namespace P2DDY
+﻿using P2DDY;
+
+namespace DDY
 {
     public partial class App : Application
     {
@@ -9,7 +11,7 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new MainPage()) { Title = "P2DDY" };
+            return new Window(new MainPage()) { Title = "Pokédex OData" };
         }
     }
 }

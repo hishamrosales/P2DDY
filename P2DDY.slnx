@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../DDY.Api/DDY.Api.csproj" Id="2bdd0ce3-2be4-472f-8e8c-a5d4f7c73229" />
   <Project Path="P2DDY.csproj" />
 </Solution>
