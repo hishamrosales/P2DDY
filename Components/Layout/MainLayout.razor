@@ -1,17 +1,18 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+<header class="shellbar">
+    <a class="shellbar__brand" href="/">
+        <span class="shellbar__logo" aria-hidden="true">●</span>
+        <span class="shellbar__title">Pokédex</span>
+        <span class="shellbar__subtitle">Servicio OData</span>
+    </a>
+    <nav class="shellbar__nav">
+        <NavLink class="shellbar__link" href="/" Match="NavLinkMatch.All">Pokémon</NavLink>
+        <NavLink class="shellbar__link" href="/favoritos">Favoritos</NavLink>
+        <NavLink class="shellbar__link" href="/pokemon/nuevo">Nuevo</NavLink>
+    </nav>
+</header>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+<main class="page">
+    @Body
+</main>
