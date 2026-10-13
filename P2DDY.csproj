@@ -75,4 +75,9 @@
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.12" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Dtos\" />
+      <Folder Include="Services\" />
+    </ItemGroup>
+
 </Project>
