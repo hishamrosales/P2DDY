@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Estilo general de las páginas -->
+    <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+        <Setter Property="BackgroundColor"
+                Value="{StaticResource Background}" />
+    </Style>
+
+    <!-- Estilo general de las etiquetas -->
+    <Style TargetType="Label">
+        <Setter Property="TextColor"
+                Value="{StaticResource TextPrimary}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
+
+    <!-- Títulos -->
+    <Style x:Key="TitleLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="28" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor"
+                Value="{StaticResource Primary}" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+    </Style>
+
+    <!-- Subtítulos -->
+    <Style x:Key="SubtitleLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor"
+                Value="{StaticResource TextSecondary}" />
+    </Style>
+
+    <!-- Botones -->
+    <Style TargetType="Button">
+        <Setter Property="BackgroundColor"
+                Value="{StaticResource Primary}" />
+        <Setter Property="TextColor"
+                Value="{StaticResource White}" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Padding" Value="15,10" />
+    </Style>
+
+    <!-- Botón secundario -->
+    <Style x:Key="SecondaryButton" TargetType="Button">
+        <Setter Property="BackgroundColor"
+                Value="{StaticResource Secondary}" />
+        <Setter Property="TextColor"
+                Value="{StaticResource PrimaryDark}" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <!-- Entradas de texto -->
+    <Style TargetType="Entry">
+        <Setter Property="TextColor"
+                Value="{StaticResource TextPrimary}" />
+        <Setter Property="PlaceholderColor"
+                Value="{StaticResource Gray600}" />
+        <Setter Property="BackgroundColor"
+                Value="{StaticResource Surface}" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <!-- Editor de texto multilínea -->
+    <Style TargetType="Editor">
+        <Setter Property="TextColor"
+                Value="{StaticResource TextPrimary}" />
+        <Setter Property="BackgroundColor"
+                Value="{StaticResource Surface}" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <!-- Campos de selección -->
+    <Style TargetType="Picker">
+        <Setter Property="TextColor"
+                Value="{StaticResource TextPrimary}" />
+        <Setter Property="TitleColor"
+                Value="{StaticResource TextSecondary}" />
+        <Setter Property="BackgroundColor"
+                Value="{StaticResource Surface}" />
+    </Style>
+
+    <!-- Marcos y contenedores -->
+    <Style TargetType="Frame">
+        <Setter Property="BackgroundColor"
+                Value="{StaticResource White}" />
+        <Setter Property="CornerRadius" Value="12" />
+        <Setter Property="Padding" Value="15" />
+        <Setter Property="HasShadow" Value="True" />
+    </Style>
+
+</ResourceDictionary>
